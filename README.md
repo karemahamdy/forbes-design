@@ -48,6 +48,9 @@ A production-grade, highly-performant, and accessibility-compliant news applicat
    ```
 
 ---
+### Live Preview
+- link: https://forbes-design.vercel.app/
+
 
 ## Project Structure
 
