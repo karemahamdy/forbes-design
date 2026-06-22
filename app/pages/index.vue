@@ -63,7 +63,7 @@
 
             
            <div
-  class="article-body font-sans text-[14px] leading-[1.75] text-[#444444] transition-colors duration-300 dark:text-white/75 sm:text-[15px]"
+  class="article-body font-sans text-[14px] leading-[1.75] text-[#444444] transition-colors duration-300 dark:text-white sm:text-[15px]"
   v-html="featured.content"
 ></div>
           </div>
@@ -134,5 +134,10 @@ useSeoMeta({
 
 .article-body :deep(strong) {
   font-weight: 600;
+}
+.article-body :deep(p),
+.article-body :deep(li),
+.article-body :deep(strong) {
+  color: inherit;
 }
 </style>
