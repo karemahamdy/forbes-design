@@ -7,7 +7,8 @@
 
       <!-- Logo -->
       <div class="p-4">
-        <img src="/images/Forbes Middle East.svg" alt="Forbes Middle East" width="100" height="25" class="h-[25px] w-auto transition duration-300 hover:scale-[1.04] dark:invert" />
+        <NuxtImg src="/images/Forbes Middle East.svg" width="100" height="25" loading="lazy" alt="Forbes Middle East"
+          class="h-[25px] w-auto dark:invert" />
       </div>
 
       <!-- Bottom Line -->
@@ -26,18 +27,26 @@
         <!-- Social -->
         <ul class="flex items-center gap-5" aria-label="Social media links">
           <li>
-            <Instagram :size="18" class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]" aria-hidden="true" />
+            <Instagram :size="18"
+              class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]"
+              aria-hidden="true" />
           </li>
 
           <li>
-            <Linkedin :size="18" class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]" aria-hidden="true" />
+            <Linkedin :size="18"
+              class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]"
+              aria-hidden="true" />
           </li>
 
           <li>
-            <Youtube :size="18" class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]" aria-hidden="true" />
+            <Youtube :size="18"
+              class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]"
+              aria-hidden="true" />
           </li>
           <li>
-            <Twitter :size="18" class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]" aria-hidden="true" />
+            <Twitter :size="18"
+              class="stroke-[2.2] transition duration-300 hover:-translate-y-0.5 hover:text-[#c00000] dark:hover:text-[#ff3333]"
+              aria-hidden="true" />
           </li>
 
         </ul>
@@ -51,7 +60,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue'
 import {
   Instagram,
   Linkedin,
@@ -59,5 +67,5 @@ import {
   Twitter,
 } from 'lucide-vue-next'
 
-const year = computed(() => new Date().getFullYear())
+const year = new Date().getFullYear()
 </script>

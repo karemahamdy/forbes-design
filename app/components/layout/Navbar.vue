@@ -6,7 +6,6 @@
         <button
           v-for="(cat, index) in categories"
           :key="cat.id"
-          @click="selectCategory(cat.slug)"
           class="animated-rule animate-fade-up relative shrink-0 text-[14px] transition-colors"
           :style="{ animationDelay: `${index * 55}ms` }"
           :class="
@@ -34,10 +33,6 @@ const { data: categories } = await getCategories()
 
 const isActive = (slug: string | null) => activeCategory.value === slug
 
-const selectCategory = (slug: string | null) => {
-  activeCategory.value = slug
-  navigateTo('/')
-}
 </script>
 
 <style scoped>

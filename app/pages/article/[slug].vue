@@ -15,9 +15,7 @@
       <div class="animate-fade-up border-t-4 border-[#c00000] bg-white transition-colors duration-300 dark:border-[#ff3333] dark:bg-[#050505]">
         <!-- Hero Image - full width -->
         <div class="image-shell overflow-hidden bg-[#f1f1f1] dark:bg-[#111111]" style="aspect-ratio: 980/653;">
-          <img
-            :src="data.article.imageUrl"
-            :alt="data.article.title"
+          <img :src="data.article.imageUrl" :alt="data.article.title" loading="lazy" decoding="async"
             class="h-full w-full object-cover transition-transform duration-700 hover:scale-[1.03]"
           />
         </div>
