@@ -88,22 +88,23 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      children: computed(() => {
-        if (!data.value) return '{}'
-        const art = data.value.article
-        return JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'NewsArticle',
-          headline: art.title,
-          description: art.excerpt,
-          image: [art.imageUrl],
-          datePublished: new Date().toISOString(),
-          author: [{ '@type': 'Person', name: art.author.name }],
-          publisher: {
-            '@type': 'Organization',
-            name: 'Forbes Middle East'
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'NewsArticle',
+        headline: data.value?.article.title,
+        description: data.value?.article.excerpt,
+        image: [data.value?.article.imageUrl],
+        datePublished: new Date().toISOString(),
+        author: [
+          {
+            '@type': 'Person',
+            name: data.value?.article.author.name
           }
-        })
+        ],
+        publisher: {
+          '@type': 'Organization',
+          name: 'Forbes Middle East'
+        }
       })
     }
   ]
