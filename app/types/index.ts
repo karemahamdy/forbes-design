@@ -1,7 +1,7 @@
 export interface Author {
   id: string
   name: string
-  avatar: string
+  avatar?: string
   role?: string
 }
 
@@ -34,12 +34,6 @@ export interface Article {
   isFeatured?: boolean
 }
 
-export interface NavigationItem {
-  name: string
-  path: string
-  isActive?: boolean
-}
-
-export interface NewsletterInput {
-  email: string
+export type ArticleSummary = Omit<Article, 'content'> & {
+  content?: string
 }

@@ -43,12 +43,12 @@ export const mockArticles: Article[] = [
       
       <p>Looking ahead, the continued influence of cultural movements will likely lead to even more significant societal changes. As technology continues to evolve, it will likely provide new platforms for activism and expression, while also presenting new challenges that require collective action. In the years ahead, cultural movements will continue to play a vital role in shaping contemporary society, encouraging us to participate in positive change and contribute to a better, more inclusive world.</p>
     `,
-    imageUrl: '/images/t5YaBKeN946wrLdOANFHbXHDI0.jpg (1).png',
+    imageUrl: '/optimized/culture.webp',
     imageCaption: 'IN HONOREM PRINCIPIS APOST PAVLVS V BORGHESIVS ROMANVS PONT MAX AN MD C XII PONT VII',
     author: {
       id: 'duf-hawkins',
       name: 'DUF HAWKINS',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150',
+      avatar: '/optimized/social.webp',
       role: 'Contributing Writer'
     },
     category: { id: '7', name: 'Culture', slug: 'culture' },
@@ -93,11 +93,11 @@ export const mockArticles: Article[] = [
       <p>Looking ahead, the continued influence of cultural movements will likely lead to even more significant societal changes. As technology continues to evolve, it will likely provide new platforms for activism and expression, while also presenting new challenges that require collective action. In the years ahead, cultural movements will continue to play a vital role in shaping contemporary society, encouraging us to participate in positive change and contribute to a better, more inclusive world.</p>
     
     `,
-    imageUrl: '/images/66da9f082769115a30bf4133_news-thumb-03-p-800.jpg.png',
+    imageUrl: '/optimized/social.webp',
     author: {
       id: 'sarah-jenkins',
       name: 'Sarah Jenkins',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150',
+      avatar: '/optimized/social.webp',
       role: 'Staff Writer'
     },
     category: { id: '1', name: 'World News', slug: 'world-news' },
@@ -139,11 +139,11 @@ export const mockArticles: Article[] = [
       
       <p>Looking ahead, the continued influence of cultural movements will likely lead to even more significant societal changes. As technology continues to evolve, it will likely provide new platforms for activism and expression, while also presenting new challenges that require collective action. In the years ahead, cultural movements will continue to play a vital role in shaping contemporary society, encouraging us to participate in positive change and contribute to a better, more inclusive world.</p>
     `,
-    imageUrl: '/images/247042b16062139151a032017e382538ce8dea72.png',
+    imageUrl: '/optimized/genetic.webp',
     author: {
       id: 'dr-emily-wong',
       name: 'Dr. Emily Wong',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150',
+      avatar: '/optimized/social.webp',
       role: 'Medical Editor'
     },
     category: { id: '5', name: 'Health', slug: 'health' },
@@ -185,11 +185,11 @@ export const mockArticles: Article[] = [
       
       <p>Looking ahead, the continued influence of cultural movements will likely lead to even more significant societal changes. As technology continues to evolve, it will likely provide new platforms for activism and expression, while also presenting new challenges that require collective action. In the years ahead, cultural movements will continue to play a vital role in shaping contemporary society, encouraging us to participate in positive change and contribute to a better, more inclusive world.</p>
     `,
-    imageUrl: '/images/66da9f082769115a30bf4133_news-thumb-03-p-800.jpg (1).png',
+    imageUrl: '/optimized/sports.webp',
     author: {
       id: 'marcus-kane',
       name: 'Marcus Kane',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150',
+      avatar: '/optimized/sports.webp',
       role: 'Sports Journalist'
     },
     category: { id: '6', name: 'Sports', slug: 'sports' },

@@ -55,13 +55,15 @@
 
     <!-- Logo -->
     <div class="py-8">
-      <NuxtLink to="/" class="flex justify-center">
+      <div class="flex justify-center">
         <img
           src="/images/Forbes Middle East.svg"
-          alt="Forbes"
+          alt="Forbes Middle East"
+          width="279"
+          height="70"
           class="h-[70px] w-auto transition duration-300 hover:scale-[1.02] dark:invert"
         />
-      </NuxtLink>
+      </div>
     </div>
   </header>
 </template>

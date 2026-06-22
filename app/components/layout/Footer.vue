@@ -7,10 +7,7 @@
 
       <!-- Logo -->
       <div class="p-4">
-
-        <NuxtLink to="/">
-          <img src="/images/Forbes Middle East.svg" alt="Forbes" class="h-[25px] w-auto transition duration-300 hover:scale-[1.04] dark:invert" />
-        </NuxtLink>
+        <img src="/images/Forbes Middle East.svg" alt="Forbes Middle East" width="100" height="25" class="h-[25px] w-auto transition duration-300 hover:scale-[1.04] dark:invert" />
       </div>
 
       <!-- Bottom Line -->

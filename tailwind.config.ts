@@ -33,8 +33,8 @@ export default <Config>{
         }
       },
       fontFamily: {
-        serif: ['Merriweather', 'Georgia', 'serif'],
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Georgia', 'serif'],
+        sans: ['Arial', 'Helvetica', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         // Match the style guide
