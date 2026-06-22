@@ -9,7 +9,7 @@ export interface Category {
   id: string
   name: string
   slug: string
-  color?: string // e.g. for dynamic badges/accents
+  color?: string 
 }
 
 export interface Tag {
@@ -23,13 +23,13 @@ export interface Article {
   slug: string
   title: string
   excerpt: string
-  content: string // Rich body text / HTML
+  content: string 
   imageUrl: string
   imageCaption?: string
   author: Author
   category: Category
   tags: Tag[]
-  publishedAt: string // ISO string or human date
+  publishedAt: string 
   readingTimeMin: number
   isFeatured?: boolean
 }
