@@ -43,7 +43,7 @@ export const mockArticles: Article[] = [
       
       <p>Looking ahead, the continued influence of cultural movements will likely lead to even more significant societal changes. As technology continues to evolve, it will likely provide new platforms for activism and expression, while also presenting new challenges that require collective action. In the years ahead, cultural movements will continue to play a vital role in shaping contemporary society, encouraging us to participate in positive change and contribute to a better, more inclusive world.</p>
     `,
-    imageUrl: '/images/66da9f082769115a30bf4133_news-thumb-03-p-800.jpg%20(1).png',
+    imageUrl: '/images/t5YaBKeN946wrLdOANFHbXHDI0.jpg (1).png',
     imageCaption: 'IN HONOREM PRINCIPIS APOST PAVLVS V BORGHESIVS ROMANVS PONT MAX AN MD C XII PONT VII',
     author: {
       id: 'duf-hawkins',

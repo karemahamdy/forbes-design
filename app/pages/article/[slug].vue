@@ -28,13 +28,13 @@
             <img
               :src="data.article.author.avatar"
               :alt="data.article.author.name"
-              class="h-9 w-9 rounded-full border-2 border-[#c00000] object-cover dark:border-[#ff3333]"
+              class="h-9 w-9 rounded-full object-cover dark:border-[#ff3333]"
             />
             <div>
-              <div class="font-sans text-[11px] font-bold uppercase tracking-wider text-[#111111] transition-colors duration-300 dark:text-white">
+              <div class="font-sans text-[14px] font-bold uppercase tracking-wider text-[#111111] transition-colors duration-300 dark:text-white">
                 {{ data.article.author.name }}
               </div>
-              <div class="mt-0.5 flex items-center gap-1.5 font-sans text-[10px] text-[#666666] transition-colors duration-300 dark:text-white/60">
+              <div class="mt-0.5 flex items-center gap-1.5 font-sans text-[14px] text-[#666666] transition-colors duration-300 dark:text-white/60">
                 <svg class="h-3 w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 {{ data.article.publishedAt }}
               </div>
@@ -48,7 +48,7 @@
 
           <!-- Article Body -->
           <div
-            class="article-body font-sans text-[14px] leading-[1.75] text-[#444444] transition-colors duration-300 dark:text-white/75 sm:text-[15px]"
+            class="article-body font-sans text-[14px] leading-[1.75] text-[#444444] transition-colors duration-300 dark:text-white sm:text-[15px]"
             v-html="data.article.content"
           ></div>
         </div>
@@ -139,7 +139,11 @@ useHead({
 :global(.dark) .article-body :deep(li) {
   color: rgba(255, 255, 255, 0.76);
 }
-
+.article-body :deep(p),
+.article-body :deep(li),
+.article-body :deep(strong) {
+  color: inherit;
+}
 :global(.dark) .article-body :deep(strong) {
   color: #ffffff;
 }

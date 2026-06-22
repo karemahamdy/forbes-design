@@ -62,9 +62,10 @@
             </h1>
 
             
-            <p class="line-clamp-4 font-sans text-[13px] leading-relaxed text-[#555555] transition-colors duration-300 dark:text-white/75">
-              {{ featured.excerpt }}
-            </p>
+           <div
+  class="article-body font-sans text-[14px] leading-[1.75] text-[#444444] transition-colors duration-300 dark:text-white/75 sm:text-[15px]"
+  v-html="featured.content"
+></div>
           </div>
         </div>
       </div>
@@ -110,3 +111,26 @@ useSeoMeta({
   twitterCard: 'summary_large_image'
 })
 </script>
+
+<style scoped>
+.article-body :deep(p) {
+  color: #374151;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.article-body :deep(ul) {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.article-body :deep(li) {
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.article-body :deep(strong) {
+  font-weight: 600;
+}
+</style>
