@@ -9,7 +9,7 @@
     </div>
 
     <!-- Loading skeletons -->
-    <div v-if="pending" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div v-if="showLoading" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <CardNewsCardSkeleton v-for="i in 6" :key="i" />
     </div>
 
@@ -81,11 +81,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useArticles } from '~/composables/useArticles'
+import { useDelayedPending } from '~/composables/useDelayedPending'
 
 const { activeCategory, searchQuery, getArticles, getCategories } = useArticles()
 
 const { data: articles, pending, error, refresh } = await getArticles()
 const { data: categories } = await getCategories()
+const { showLoading } = useDelayedPending(pending)
 
 const activeCategoryName = computed(() => {
   if (!activeCategory.value || !categories.value) return null

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Loading -->
-    <CardArticleSkeleton v-if="pending" />
+    <CardArticleSkeleton v-if="showLoading" />
 
     <!-- Error / Not Found -->
     <div v-else-if="error || !data" class="animate-fade-up bg-white p-12 text-center transition-colors duration-300 dark:bg-[#050505]">
@@ -66,12 +66,14 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useArticles } from '~/composables/useArticles'
+import { useDelayedPending } from '~/composables/useDelayedPending'
 
 const route = useRoute()
 const slug = route.params.slug as string
 const { getArticleBySlug } = useArticles()
 
 const { data, pending, error } = await getArticleBySlug(slug)
+const { showLoading } = useDelayedPending(pending)
 
 // Dynamic SEO
 useSeoMeta({
